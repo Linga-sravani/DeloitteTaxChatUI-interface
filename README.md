@@ -7,19 +7,10 @@ Displays conversation history (questions and responses).
 RESTful API backend for handling requests.
 Setup
 Clone the repository:
-bash
-Copy
-1
 git clone https://github.com/Linga-sravani/DeloitteTaxChatUI-interface.git
 Install dependencies:
-bash
-Copy
-1
 npm install
 Start the server:
-bash
-Copy
-1
 node server.js
 Open your browser and go to http://localhost:3000.
 How It Works
