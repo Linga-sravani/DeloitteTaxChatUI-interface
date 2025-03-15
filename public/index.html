@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deloitte Auditor Chat UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        header {
+            background-color: #0047ab;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .chat-box {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+        #response-area {
+            flex: 1;
+            overflow-y: scroll;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+        #responses {
+            height: 100%;
+        }
+        #tax-prompt-form {
+            display: flex;
+            flex-direction: column;
+        }
+        #tax-prompt {
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+        hr {
+            margin: 10px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Deloitte Auditor Enterprise Chat UI</h1>
+            <span>Deloitte.</span>
+        </header>
+        <div class="chat-box">
+            <div id="response-area">
+                <h3>Conversation History</h3>
+                <div id="responses"></div>
+            </div>
+            <form id="tax-prompt-form">
+                <textarea id="tax-prompt" placeholder="Type your tax-related question here..."></textarea>
+                <button type="submit"><img src="deloitte-logo.png" alt="Deloitte Logo"> Send</button>
+                <button type="button" onclick="clearPrompt()">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
